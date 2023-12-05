@@ -10,4 +10,11 @@ The second part was a bit more tricky. I had to find integers spelled out as the
 
 "twone" -> "2ne" instead of "21"
 
-which proved to be a problem when calculating the sum. I wrote a quick program in Python since I am more familiar with it to solve it quickly by using `for` loops to iterate over string char by char and replacing the words with their number representation while leaving the last letter of the word intact. This proved to be a good enough solution for the problem. I then rewrote the solution in Go. My first approach can be seen in `helper.go` file. 
+which proved to be a problem when calculating the sum. I wrote a quick program in Python since I am more familiar with it to solve it quickly by using `for` loops to iterate over string char by char and replacing the words with their number representation while leaving the last letter of the word intact. This proved to be a good enough solution for the problem. I then rewrote the solution in Go. My first approach can be seen in `helper.go` file.
+
+## Day 2
+### Part 1
+The first part took me a little bit of time, mostly because of a weird quirk of splitting in Go - when you split the following string " 2 red" it splits into **3** elements: "", "2" and "red". Other than that, it was pretty straigthforward. I got to know the OOP side of Go (if you can call it that) a bit better. 
+
+### Part 2
+The second part was actually fairly easy, after I figured out the splitting in the previous part. I just added some new functions to calculate minimum number of cubes per color and called them in corresponding `for` loops. *Easy peasy*
