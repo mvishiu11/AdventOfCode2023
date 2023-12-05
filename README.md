@@ -1,5 +1,5 @@
 # AdventOfCode2023
-This repository contains my solutions to <a href="https://adventofcode.com/2023">Advent of Code 2023</a>. I have chosen to solve those problems using Go (and learn it in the process). I may solve some problems with C/C++ if I feel like it. If a problem will prove too hard to solve with those (since I do not know them all that great) I will probably default to Python.
+This repository contains my solutions to <a style=text-decoration:none href="https://adventofcode.com/2023">Advent of Code 2023</a>. I have chosen to solve those problems using Go (and learn it in the process). I may solve some problems with C/C++ if I feel like it. If a problem will prove too hard to solve with those (since I do not know them all that great) I will probably default to Python.
 
 ## Progress
 | Day | Part 1 | Part 2 |
