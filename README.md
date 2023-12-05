@@ -1,5 +1,20 @@
 # AdventOfCode2023
-This repository contains my solutions to Advent of Code 2023. I have chosen to solve those problems using Go (and learn it in the process). I may solve some problems with C/C++ if I feel like it. If a problem will prove too hard to solve with those (since I do not know them all that great) I will probably default to Python.
+This repository contains my solutions to <a href="https://adventofcode.com/2023">Advent of Code 2023</a>. I have chosen to solve those problems using Go (and learn it in the process). I may solve some problems with C/C++ if I feel like it. If a problem will prove too hard to solve with those (since I do not know them all that great) I will probably default to Python.
+
+## Progress
+| Day | Part 1 | Part 2 |
+|:---:|:------:|:------:|
+|  1  |   ✔️   |   ✔️   |
+|  2  |   ✔️   |   ✔️   |
+
+## Quick navigation
+- [Day 1](#day-1)
+  - [Part 1](#part-1)
+  - [Part 2](#part-2)
+- [Day 2](#day-2)
+    - [Part 1](#part-1-1)
+    - [Part 2](#part-2-1)
+
 
 ## Day 1
 ### Part 1
