@@ -37,7 +37,6 @@ func main() {
 	defer file.Close()
 
 	var games []Game 
-	targetConfig := [3]Entry{{12, "red"}, {13, "green"}, {14, "blue"}}
 
 	// Create a scanner to read the file line by line
 	scanner := bufio.NewScanner(file)
@@ -45,9 +44,6 @@ func main() {
     for scanner.Scan() {
        games = append(games, parseGame(scanner.Text()))
     }
-
-	// Finding possible games
-	fmt.Println("Possible games ID sum is: ", possibleGamesIdSum(targetConfig, games))
 
 	// Part 2: Finding the sum of powers
 	powerSum := calculatePowerSum(games)
@@ -76,45 +72,6 @@ func parseGame(line string) Game {
 
 	return game
 }
-
-func isPossible(config [3]Entry, game Game) bool {
-	for _, set := range game.sets {
-		for _, entry := range set.entries {
-			num := ColorConvert(entry.color)
-			if num == -1 {
-				return false
-			}
-			if entry.amount > config[num].amount {
-				return false
-			}
-		}
-	}
-	return true
-}
-
-func possibleGamesIdSum(config [3]Entry, games []Game) int {
-	var sum int
-	for _, game := range games {
-		if isPossible(config, game) {
-			sum += game.id
-		}
-	}
-	return sum
-}
-
-func ColorConvert(color string) int {
-	switch color {
-	case "red":
-		return 0
-	case "green":
-		return 1
-	case "blue":
-		return 2
-	default:
-		return -1
-	}
-}
-
 
 func calculatePowerGame(game Game) int {
 	redMin, greenMin, blueMin := 0, 0, 0
