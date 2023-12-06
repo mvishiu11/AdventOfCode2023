@@ -6,6 +6,7 @@ This repository contains my solutions to <a style=text-decoration:none href="htt
 |:---:|:------:|:------:|
 |  1  |   ✔️   |   ✔️   |
 |  2  |   ✔️   |   ✔️   |
+|  3  |   ✔️   |   ✔️   |
 
 ## Quick navigation
 - [Day 1](#day-1)
@@ -14,6 +15,9 @@ This repository contains my solutions to <a style=text-decoration:none href="htt
 - [Day 2](#day-2)
     - [Part 1](#part-1-1)
     - [Part 2](#part-2-1)
+- [Day 3](#day-3)
+    - [Part 1](#part-1-2)
+    - [Part 2](#part-2-2)
 
 
 ## Day 1
@@ -33,3 +37,10 @@ The first part took me a little bit of time, mostly because of a weird quirk of 
 
 ### Part 2
 The second part was actually fairly easy, after I figured out the splitting in the previous part. I just added some new functions to calculate minimum number of cubes per color and called them in corresponding `for` loops. *Easy peasy*
+
+## Day 3
+### Part 1
+This one was hard enough for me to default to Python. I added a function to get surroundings of each number and then looked for matching regexes to find correct numbers with `re` module. Did not thing it would actually work but it did. After that, it was doable.
+
+### Part 2
+This one was not much harder after I figured out how to use regexes properly. Added a function to find gears (ergo *) which was done in the most straightforward way possible. After I had some fun with timer wrappers using `time` module and packed both parts into one function.
