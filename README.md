@@ -7,6 +7,7 @@ This repository contains my solutions to <a style=text-decoration:none href="htt
 |  1  |   ✔️   |   ✔️   |
 |  2  |   ✔️   |   ✔️   |
 |  3  |   ✔️   |   ✔️   |
+|  4  |   ✔️   |   ✔️   |
 
 ## Quick navigation
 - [Day 1](#day-1)
@@ -18,6 +19,9 @@ This repository contains my solutions to <a style=text-decoration:none href="htt
 - [Day 3](#day-3)
     - [Part 1](#part-1-2)
     - [Part 2](#part-2-2)
+- [Day 4](#day-4)
+    - [Part 1](#part-1-3)
+    - [Part 2](#part-2-3)
 
 
 ## Day 1
@@ -44,3 +48,10 @@ This one was hard enough for me to default to Python. I added a function to get 
 
 ### Part 2
 This one was not much harder after I figured out how to use regexes properly. Added a function to find gears (ergo *) which was done in the most straightforward way possible. After I had some fun with timer wrappers using `time` module and packed both parts into one function.
+
+## Day 4
+### Part 1
+Did not work in Go, so defaulted to Python again (I know, I know). Nothing special really, just parsing input, packing first part of each card into a set and checking second part for matchings. 
+
+### Part 2
+A bit more tricky, since kind of a recursive formula was needed. In the end, I just used a dictionary to update counts as I go (also reduced time complexity to O(n) from O(n^2)) this way. Added a class to contain Cards, since I wanted their id anyways. 
