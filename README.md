@@ -13,6 +13,9 @@ This repository contains my solutions to <a style=text-decoration:none href="htt
 |  2  |   ✔️   |   ✔️   |
 |  3  |   ✔️   |   ✔️   |
 |  4  |   ✔️   |   ✔️   |
+|  5  |   ✔️   |   ✔️   |
+|  6  |   ✔️   |   ✔️   |
+|  7  |   ✔️   |    X    |
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#quick-navigation)
@@ -30,6 +33,9 @@ This repository contains my solutions to <a style=text-decoration:none href="htt
 - [Day 4](#day-4)
     - [Part 1](#part-1-3)
     - [Part 2](#part-2-3)
+- [Day 5](#day-5)
+    - [Part 1](#part-1-4)
+    - [Part 2](#part-2-4)
 
 
 
@@ -75,3 +81,23 @@ Did not work in Go, so defaulted to Python again (I know, I know). Nothing speci
 
 ### Part 2
 A bit more tricky, since kind of a recursive formula was needed. In the end, I just used a dictionary to update counts as I go (also reduced time complexity to O(n) from O(n^2)) this way. Added a class to contain Cards, since I wanted their id anyways. 
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#day-5)
+
+## ➤ Day 5
+### Part 1
+So, basically mapping things efficiently. Tried brute forcing, my idea for that is in `test.py`. It worked for part 1, but was not efficient enough for part 2. 
+
+### Part 2
+For second part, this did not work, so I added a Transformer class and figured out applying trasformations to a range efficiently. A bit inspired by solution found in subreddit.
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#day-6)
+
+## ➤ Day 6
+### Part 1
+Probably the easiest one so far. Just had to parse input find possible solutions so brute force worked just fine.
+
+### Part 2
+Same code as part 1, achieved it by just changing the input format in file. Could quite easily adjust the parsing as well.
