@@ -36,6 +36,9 @@ This repository contains my solutions to <a style=text-decoration:none href="htt
 - [Day 5](#day-5)
     - [Part 1](#part-1-4)
     - [Part 2](#part-2-4)
+- [Day 6](#day-6)
+    - [Part 1](#part-1-5)
+    - [Part 2](#part-2-5)
 
 
 
